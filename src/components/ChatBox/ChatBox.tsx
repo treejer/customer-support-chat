@@ -1,9 +1,8 @@
 // @ts-nocheck
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from 'react';
 
-import { RangerLogo } from "../../assets/images";
-import { ActivityIndicator } from "../ActivityIndicator/ActivityIndicator";
-import styles from "./ChatBox.module.css";
+import {ActivityIndicator} from '../ActivityIndicator/ActivityIndicator';
+import styles from './ChatBox.module.css';
 
 export function ChatBox() {
   const [loading, setLoading] = useState(true);
@@ -27,12 +26,9 @@ export function ChatBox() {
 
   return (
     <div className={styles.container}>
-      <div className={styles["flex-col"]}>
-        <img
-          src={RangerLogo}
-          alt="Ranger Treejer logo"
-          style={{ width: 240, height: 240 }}
-        />
+      <div className={styles['flex-col']}>
+        <p className={styles.ranger}>Customer Support Chat</p>
+        <img src="/images/RangerLogo.png" alt="Ranger Treejer logo" style={{width: 240, height: 240}} />
         <p className={styles.ranger}>Ranger App</p>
         <p className={styles.by}>by Treejer</p>
         {loading ? (

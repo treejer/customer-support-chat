@@ -1,7 +1,7 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
 
-import { ChatBox } from "./components/ChatBox/ChatBox";
+import {ChatBox} from './components/ChatBox/ChatBox';
 
 function App() {
   return (
